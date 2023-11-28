@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1013449146528",
+    "project_id": "district-connect-83dfe",
+    "storage_bucket": "district-connect-83dfe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1013449146528:android:866cf2fa0164c7464209c5",
+        "android_client_info": {
+          "package_name": "com.example.districtconnect"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJtKmuAhATJWLFseaOKNcm-EZ0t6-KqHY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
