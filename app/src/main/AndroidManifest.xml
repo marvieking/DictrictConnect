@@ -13,9 +13,12 @@
         android:theme="@style/Theme.DictrictConnect"
         tools:targetApi="31">
         <activity
+            android:name=".registration"
+            android:exported="false" />
+        <activity
             android:name=".schedAppointment"
             android:exported="false"
-            android:parentActivityName=".fragmentServices"/>
+            android:parentActivityName=".fragmentServices" />
         <activity
             android:name=".RequestForm"
             android:exported="false"
@@ -26,7 +29,7 @@
         <activity
             android:name=".ComposeMsg"
             android:exported="false"
-            android:parentActivityName=".fragmentServices"/>
+            android:parentActivityName=".fragmentServices" />
         <activity
             android:name=".officialHome"
             android:exported="false" />
