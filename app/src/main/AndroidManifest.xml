@@ -10,8 +10,32 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.DictrictConnect"
+        android:theme="@style/Theme.DistrictConnect"
         tools:targetApi="31">
+        <activity
+            android:name=".officialFeedback"
+            android:exported="false" />
+        <activity
+            android:name=".residentFeedback"
+            android:exported="false" />
+        <activity
+            android:name=".addAnnouncement"
+            android:exported="false" />
+        <activity
+            android:name=".sampleListView"
+            android:exported="false" />
+        <activity
+            android:name=".makeAppointment"
+            android:exported="false" />
+        <activity
+            android:name=".officialInbox"
+            android:exported="false" />
+        <activity
+            android:name=".officialReceivedForms"
+            android:exported="false" />
+        <activity
+            android:name=".officialDashboard"
+            android:exported="false" />
         <activity
             android:name=".Verification"
             android:exported="false" />
@@ -30,17 +54,11 @@
             android:exported="false"
             android:parentActivityName=".fragmentServices" />
         <activity
-            android:name=".Feedback"
-            android:exported="false" />
-        <activity
             android:name=".ComposeMsg"
             android:exported="false"
             android:parentActivityName=".fragmentServices" />
         <activity
             android:name=".officialHome"
-            android:exported="false" />
-        <activity
-            android:name=".residentServices"
             android:exported="false" />
         <activity
             android:name=".residentHome"
@@ -50,12 +68,6 @@
             android:exported="false" />
         <activity
             android:name=".residentLogin"
-            android:exported="false" />
-        <activity
-            android:name=".residentlogin"
-            android:exported="false" />
-        <activity
-            android:name=".MainLogin"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

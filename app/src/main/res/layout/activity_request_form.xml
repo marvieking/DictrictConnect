@@ -4,24 +4,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F2F2F2"
     tools:context=".RequestForm">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toplayer">
+    </ImageView>
 
     <ImageView
         android:id="@+id/backButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:onClick="onBackButtonClick"
-        android:src="@drawable/ic_back_button" />
+        android:src="@drawable/baseline_arrow_back_24" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Fill Up Form"
+        android:textSize="25dp"
+        android:textColor="@color/lightgray"
+        android:gravity="center">
+    </TextView>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="130dp"
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="30dp"
         android:orientation="vertical">
@@ -30,9 +47,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Full Name:"
+            android:textColor="@color/darkerblue"
             android:textSize="17dp"></TextView>
 
         <EditText
+            android:id="@+id/Fullname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="17dp"
@@ -42,10 +61,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Age:"
-            android:textSize="17dp"></TextView>
+            android:textColor="@color/darkerblue"
+            android:textSize="17dp">
+        </TextView>
 
         <EditText
-            android:id="@+id/editTextNumber"
+            android:id="@+id/Age"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -57,14 +78,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
+            android:textColor="@color/darkerblue"
             android:text="Status:"
             android:textSize="17dp"/>
 
 
         <RadioGroup
+            android:id="@+id/selectStatus"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"
+            android:onClick="checkButton"
+            android:textColor="@color/darkerblue"
             >
 
             <RadioButton
@@ -95,12 +120,16 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:text="Purpose"
+            android:textColor="@color/darkerblue"
             android:textSize="17dp"/>
 
         <RadioGroup
+            android:id="@+id/Purpose"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp">
+            android:layout_marginLeft="40dp"
+            android:onClick="checkButton"
+            android:textColor="@color/darkerblue">
 
             <RadioButton
                 android:id="@+id/indigency"
@@ -125,8 +154,18 @@
 
         </RadioGroup>
 
-
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/darkerblue"
+            android:text="SUBMIT">
+        </Button>
     </LinearLayout>
+
+
 
 
 </RelativeLayout>

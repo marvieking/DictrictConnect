@@ -8,15 +8,71 @@
 
     tools:context=".fragmentAccount">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account Settings"
+            android:textSize="30dp"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center">
+        </TextView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/baseline_account_box_24"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp">
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username:"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="30dp">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:layout_marginLeft="50dp">
+        </TextView>
+
+
+
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/changepassButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="150dp"
+        android:layout_marginLeft="50dp"
+        android:backgroundTint="@color/forbox"
+        android:textColor="@color/darkerblue"
+        android:text="Change Password" />
 
     <Button
         android:id="@+id/logoutButton"
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="124dp"
         android:layout_gravity="bottom"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="50dp"
+        android:backgroundTint="@color/orange"
         android:text="LOGOUT"
-
         />
 
 

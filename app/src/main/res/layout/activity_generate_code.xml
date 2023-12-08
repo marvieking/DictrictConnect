@@ -29,30 +29,53 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="135dp"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/linearLayout" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+63"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    />
+
         <EditText
             android:id="@+id/inputNo"
-            android:layout_width="wrap_content"
+            android:layout_width="170dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="135dp"
             android:ems="10"
-            android:text="+63"
+            android:text=""
             android:textStyle="bold"
-            android:hint="Your Phone Number"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:letterSpacing="0.1"
+            android:hint="XXXXXXXXXX"
             android:inputType="number"
             android:imeOptions="actionDone"
+            android:layout_marginLeft="10dp"
+            android:maxLength="10"
             android:importantForAutofill="no"
             android:textColor="@color/orange"
             android:textColorHint="@color/orange"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/linearLayout" />
+           />
+
+
+        </LinearLayout>
 
         <Button
             android:id="@+id/toGenerate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/orange"
-            android:text="SEND CODE"
+            android:text="SEND OTP"
             android:layout_marginTop="250dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"

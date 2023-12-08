@@ -11,7 +11,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/darkerblue"
-        android:text="Select the option that applies to you"
+        android:text="Select the option that applies to you:"
+        android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -21,10 +22,12 @@
 
     <Button
         android:id="@+id/btnResident"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="80dp"
         android:backgroundTint="@color/lightblue"
         android:text="RESIDENT"
+        android:textSize="20dp"
         android:textColor="@color/darkerblue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,17 +36,19 @@
 
     <Button
         android:id="@+id/btnOfficial"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="80dp"
         android:backgroundTint="@color/lightblue"
         android:text="OFFICIAL"
         android:textColor="@color/darkerblue"
+        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.581"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.57"
+        app:layout_constraintVertical_bias="0.603"
         app:strokeColor="@color/darkerblue" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
