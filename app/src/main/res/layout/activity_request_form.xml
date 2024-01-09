@@ -38,7 +38,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="130dp"
+        android:layout_marginTop="110dp"
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="30dp"
         android:orientation="vertical">
@@ -49,6 +49,16 @@
             android:text="Full Name:"
             android:textColor="@color/darkerblue"
             android:textSize="17dp"></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Given Name - Middle Initial - Family Name"
+            android:textStyle="italic"
+            android:textColor="@color/darkerblue"
+            android:textSize="14dp"></TextView>
+
 
         <EditText
             android:id="@+id/Fullname"
@@ -84,7 +94,7 @@
 
 
         <RadioGroup
-            android:id="@+id/selectStatus"
+            android:id="@+id/Status"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"

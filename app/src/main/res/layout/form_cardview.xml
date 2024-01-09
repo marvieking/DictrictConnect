@@ -1,121 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/formCardview"
-    android:layout_width="wrap_content"
+    android:layout_width="350dp"
     android:layout_height="wrap_content"
+    app:cardCornerRadius="15dp"
+    android:layout_marginTop="20dp"
+    android:layout_gravity="center"
     android:clickable="true"
     android:focusable="true"
     android:foreground="?selectableItemBackground"
-    android:layout_margin="5dp"
-    app:cardCornerRadius="15dp">
+    android:layout_margin="5dp">
 
-    <RelativeLayout
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/forbox">
+        android:orientation="vertical"
+        android:layout_margin="5dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="150dp"
-            android:layout_marginBottom="10dp"
-            android:orientation="vertical">
+            android:orientation="horizontal"
+            android:layout_margin="5dp">
 
-            <LinearLayout
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name:"
+                android:textStyle="bold"
+                android:textSize="17dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/senderFullname"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:orientation="horizontal">
+                android:hint="Sender Fullname"
+                android:layout_marginLeft="5dp"
+                android:textSize="17dp"></TextView>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Name:"
-                    android:textStyle="bold"
-                    android:textSize="14dp">
-
-                </TextView>
-
-                <TextView
-                    android:id="@+id/textView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Sender Fullname"
-                    android:layout_marginStart="10dp"
-                    android:textSize="14dp"></TextView>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Age:"
-                    android:textStyle="bold"
-                    android:textSize="14dp"></TextView>
-
-                <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Sender Age"
-                    android:layout_marginStart="10dp"
-                    android:textSize="14dp"></TextView>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Status:"
-                    android:textStyle="bold"
-                    android:textSize="14dp"></TextView>
-
-                <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Sender Status"
-                    android:layout_marginStart="10dp"
-                    android:textSize="14dp"></TextView>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Purpose:"
-                    android:textStyle="bold"
-                    android:textSize="14dp"></TextView>
-
-                <TextView
-                    android:id="@+id/textView4"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="Sender Purpose"
-                    android:layout_marginStart="10dp"
-                    android:textSize="14dp"></TextView>
-
-            </LinearLayout>
         </LinearLayout>
 
-    </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age:"
+                android:textStyle="bold"
+                android:textSize="17dp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/senderAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Sender Age"
+                android:layout_marginLeft="5dp"
+                android:textSize="17dp"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status:"
+                android:textStyle="bold"
+                android:textSize="17dp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/senderStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:hint="Sender Status"
+                android:textSize="17dp"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Purpose:"
+                android:textStyle="bold"
+                android:textSize="17dp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/senderPurpose"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Sender Purpose"
+                android:layout_marginLeft="5dp"
+                android:textSize="17dp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp"></TextView>
+        </LinearLayout>
+
+    </LinearLayout>
 
 </androidx.cardview.widget.CardView>

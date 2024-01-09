@@ -11,6 +11,11 @@
         android:icon="@drawable/baseline_view_compact_alt_24"
         />
 
+    <item android:id="@+id/notification"
+        android:icon="@drawable/baseline_add_alert_24"
+        android:title="Notif"
+        />
+
     <item android:id="@+id/profile"
         android:title="Account"
         android:icon="@drawable/baseline_account_circle_24"

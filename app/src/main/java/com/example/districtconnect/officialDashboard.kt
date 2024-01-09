@@ -37,6 +37,11 @@ class officialDashboard : AppCompatActivity() {
             startActivity(feedbackIntent)
         }
 
+        sentAppointments.setOnClickListener {
+            val sentFormsIntent = Intent(this, officialAppointments::class.java)
+            startActivity(sentFormsIntent)
+        }
+
         val logoutButton: Button = findViewById<Button>(R.id.logoutButton)
         logoutButton.setOnClickListener {
 

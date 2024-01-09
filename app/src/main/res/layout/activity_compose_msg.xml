@@ -46,12 +46,12 @@
         android:layout_marginTop="120dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
-        android:orientation="vertical"
-        android:background="@color/forbox">
+        android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp">
+        android:layout_margin="10dp"
+        android:background="@color/forbox">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -60,9 +60,10 @@
             android:layout_marginLeft="20dp"
             android:textSize="18dp"></TextView>
         <TextView
+            android:id="@+id/fromUser"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Jane Doe"
+            android:text="user@567"
             android:textSize="18dp"
             android:layout_marginLeft="10dp">
         </TextView>
@@ -71,50 +72,68 @@
         <LinearLayout
             android:layout_width="350dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp">
+            android:layout_marginLeft="10dp">>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
+                android:layout_gravity="center"
                 android:text="SUBJECT:"
                 android:textSize="18dp"
                 android:textStyle="bold"></TextView>
 
-            <TextView
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/subjectSelected"
                 android:layout_width="238dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:text="Complaint"
-                android:textSize="18dp"></TextView>
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:textSize="18dp">
+
+                <AutoCompleteTextView
+                    android:id="@+id/auto_complete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/subject_label"
+                    android:inputType="none"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
         </LinearLayout>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             android:text="MESSAGE:"
             android:textStyle="bold"
             android:textSize="18dp"></TextView>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="330dp"
+            android:layout_margin="10dp"
+            android:background="@color/forbox">
+
+
 
         <EditText
+            android:id="@+id/textmsg"
             android:layout_width="match_parent"
-            android:layout_height="380dp"
-            android:layout_margin="20dp"
+            android:layout_height="match_parent"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginBottom="20dp"
-            android:background="@color/lightgray"
             android:gravity="top"
-            android:text="Compose Message..."
-            android:textColor="@color/lightblue"></EditText>
+            android:ems="0"
+            android:hint="Compose Message..."></EditText>
+
+        </LinearLayout>
 
         <Button
+            android:id="@+id/submitButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Submit"
+            android:text="SEND"
             android:layout_gravity="right"
             android:layout_margin="5dp"
             android:backgroundTint="@color/blue">

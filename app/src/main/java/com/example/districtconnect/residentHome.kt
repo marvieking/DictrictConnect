@@ -23,6 +23,7 @@ class residentHome : AppCompatActivity() {
                 R.id.home -> replaceFragment(fragmentHome())
                 R.id.services -> replaceFragment(fragmentServices())
                 R.id.profile -> replaceFragment(fragmentAccount())
+                R.id.notification -> replaceFragment(fragmentNotif())
 
                 else -> {
 

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".makeAppointment"
+    tools:context=".officialAppointments"
     android:background="@color/lightgray">
 
 
@@ -15,7 +15,7 @@
     </ImageView>
 
     <ImageView
-        android:id="@+id/backButton2"
+        android:id="@+id/backButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -28,7 +28,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="APPOINTMENT"
+        android:text="Make Appointment"
         android:gravity="center"
         android:layout_marginTop="28dp"
         android:textColor="@color/lightgray"
@@ -55,7 +55,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="prev"
-                android:backgroundTint="@color/lightblue"
+                android:backgroundTint="@color/orange"
                 android:textStyle="bold"
                 android:textSize="20dp"
                 android:onClick="prevWeekAction">
@@ -74,7 +74,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="next"
-                android:backgroundTint="@color/lightblue"
+                android:backgroundTint="@color/orange"
                 android:textStyle="bold"
                 android:textSize="20dp"
                 android:onClick="nextWeekAction">
@@ -208,114 +208,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="center"
-            android:text="Select Time:"
-            android:layout_marginTop="30dp"
+            android:text="New Event"
+            android:layout_marginTop="20dp"
+            android:background="@color/forbox"
             android:textStyle="bold"
             android:textSize="20dp"
             android:layout_gravity="center"
             android:onClick="newEventAction"/>
 
-        <LinearLayout
+        <ListView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="vertical">
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_marginTop="20dp">
-
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="9:00"
-                android:backgroundTint="@color/lightblue"
-                android:layout_margin="5dp"/>
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/lightblue"
-                android:text="10:00"
-                android:layout_margin="5dp"/>
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/lightblue"
-                android:text="11:00"
-                android:layout_margin="5dp"/>
-
-
-             </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center">
-
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="13:00"
-                    android:backgroundTint="@color/lightblue"
-                    android:layout_margin="5dp"/>
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="@color/lightblue"
-                    android:text="14:00"
-                    android:layout_margin="5dp"/>
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="@color/lightblue"
-                    android:text="15:00"
-                    android:layout_margin="5dp"/>
-
-            </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="vertical">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:text="Purpose:"
-            android:layout_marginTop="30dp"
-            android:textStyle="bold"
-            android:textSize="20dp"
-            android:layout_gravity="center"
-            android:onClick="newEventAction"/>
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_marginTop="10dp"
-            android:ems="10"
-            android:text="Tell your purpose"/>
-
-        </LinearLayout>
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/orange"
-            android:text="MAKE APPOINTMENT"
-            android:layout_marginTop="50dp"
-            android:layout_gravity="center" />
+            android:layout_height="0dp"
+            android:layout_weight="5"/>
 
 
     </LinearLayout>
