@@ -5,6 +5,17 @@ plugins {
 }
 
 android {
+
+    signingConfigs {
+        debug {
+//            storeFile file('/Users/trixiakayeflomar/AndroidStudioProjects/DistrictConnect/keystore/DistrictConnect') //uncomment this when in mac
+            storeFile file('C:\\Users\\Vedonic\\AndroidStudioProjects\\DistrictConnect\\keystore\\DistrictConnect') //comment this when in mac
+            storePassword '11111111'
+            keyAlias 'DistrictConnect'
+            keyPassword '11111111'
+        }
+    }
+
     namespace 'com.example.districtconnect'
     compileSdk 34
 
@@ -53,7 +64,7 @@ dependencies {
     implementation 'androidx.recyclerview:recyclerview:1.2.1'
 
     //firebase
-    implementation platform('com.google.firebase:firebase-bom:32.6.0')
+    implementation(platform('com.google.firebase:firebase-bom:32.6.0'))
     implementation("com.google.firebase:firebase-auth")
     implementation 'com.google.firebase:firebase-analytics'
 
